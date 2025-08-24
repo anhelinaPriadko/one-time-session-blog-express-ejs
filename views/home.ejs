@@ -1,0 +1,25 @@
+<%- include("partials/header.ejs") %>
+
+        <h1>Hi, you`re visitin My Blog!</h1>
+        <h2>Hope you will find it interesting :)</h2>
+
+        <h3>What we write about:</h3>
+        <ul>
+            <li>Programming journey</li>
+            <li>Projects showcase</li>
+            <li>Guides & tutorials</li>
+            <li>Tech reviews</li>
+        </ul>
+
+        <h3>Recent posts:</h3>
+        <ul>
+            <% if(locals.posts) {%>
+                <% for(let i = 0; i < posts.length && i < 3; ++i) { %>
+                <li>
+                    <a href="/posts/<%= posts[i].id %>"><%= posts[i].title %></a>
+                </li>
+                <% } %>
+            <% } %>
+        </ul>
+
+<%- include("partials/footer.ejs") %>
