@@ -3,10 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/layout.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <title>My blog</title>
 </head>
 <body>
-    <header>
+    <header class="header">
 
         <p>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
@@ -15,11 +22,11 @@
             My Blog
         </p>
 
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About me</a></li>
-            <li><a href="/posts">Posts</a></li>
-            <a href="/createPost" class="btn">New Post</a>
+        <ul class="header-links-list">
+            <li><a class="header-links" href="/">Home</a></li>
+            <li><a class="header-links" href="/about">About me</a></li>
+            <li><a class="header-links" href="/posts">Posts</a></li>
+            <li><a href="/createPost" class="btn header-links">New Post</a></li>
         </ul>
     </header>
 
