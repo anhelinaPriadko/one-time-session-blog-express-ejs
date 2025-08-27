@@ -25,12 +25,12 @@
           </ul>
 
           <h3 class="quicksand-text">Recent posts:</h3>
-          <ul class="quicksand-text">
+          <ul class="quicksand-text list-posts">
             <% if(locals.posts) {%> <% for(let i = 0; i < posts.length && i < 3;
             ++i) { %>
-            <li>
-              <a href="/posts/<%= posts[i].id %>"><%= posts[i].title %></a>
-            </li>
+                <li class="list-post-cell">
+                <a href="/posts/<%= posts[i].id %>"><%= posts[i].title %></a>
+              </li>
             <% } %> <% } %>
           </ul>
         </div>

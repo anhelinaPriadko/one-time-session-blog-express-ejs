@@ -1,58 +1,59 @@
-html{
-    background-color: #F3F3E0;
-    overflow-y: scroll;
+html {
+  background-color: #f3f3e0;
+  overflow-y: scroll;
 }
 
 .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0;
 
-    background-color: #133E87;
-    color: #F3F3E0;
-    padding: 5px 0px;
-    font-size: 1.3rem;
+  background-color: #133e87;
+  color: #f3f3e0;
+  padding: 5px 0px;
+  font-size: 1.3rem;
 }
 
 .header-links-list {
   display: flex;
   gap: 3rem;
-  list-style: none;
+  
   padding: 0;
 }
 
-.header-links{
-    color: #F3F3E0;
+.header-links {
+  color: #f3f3e0;
 }
 
-.quicksand-text{
-    font-family: "Quicksand", sans-serif;
-    color: #133E87;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
+.quicksand-text {
+  font-family: "Quicksand", sans-serif;
+  color: #133e87;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
-body{
-    margin: 0;
+body {
+  margin: 0;
 }
 
 a {
   text-decoration: none;
 }
 
-main{
-    color: #608BC1;
+main {
+  color: #608bc1;
+  font-size: 1.3rem;
 }
 
-.gothic-text{
-    font-family: "Special Gothic Expanded One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+.gothic-text {
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .header > ul {
-    list-style-type: none;
-    padding-inline-start: 0;
+  list-style-type: none;
+  padding-inline-start: 0;
 }
