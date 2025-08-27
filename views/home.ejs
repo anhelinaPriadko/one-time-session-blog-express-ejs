@@ -1,25 +1,42 @@
 <%- include("partials/header.ejs") %>
 
-        <h1>Hi, you`re visiting My Blog!</h1>
-        <h2>Hope you will find it interesting :)</h2>
+<div class="title-container">
+  <div class="title-img">
+    <img src="img/canva-logo.jpg" />
+  </div>
+  <div class="title">
+    <div>
+      <div class="flex-center-container">
+        <h1 class="gothic-text">Hi, you`re visiting My Blog!</h1>
+      </div>
 
-        <h3>What we write about:</h3>
-        <ul>
+      <div class="flex-center-container">
+        <div class="content">
+          <h2 class="home-wish gothic-text">
+            Hope you will find it interesting :)
+          </h2>
+
+          <h3 class="quicksand-text">What we write about:</h3>
+          <ul class="quicksand-text">
             <li>Programming journey</li>
             <li>Projects showcase</li>
             <li>Guides & tutorials</li>
             <li>Tech reviews</li>
-        </ul>
+          </ul>
 
-        <h3>Recent posts:</h3>
-        <ul>
-            <% if(locals.posts) {%>
-                <% for(let i = 0; i < posts.length && i < 3; ++i) { %>
-                <li>
-                    <a href="/posts/<%= posts[i].id %>"><%= posts[i].title %></a>
-                </li>
-                <% } %>
-            <% } %>
-        </ul>
+          <h3 class="quicksand-text">Recent posts:</h3>
+          <ul class="quicksand-text">
+            <% if(locals.posts) {%> <% for(let i = 0; i < posts.length && i < 3;
+            ++i) { %>
+            <li>
+              <a href="/posts/<%= posts[i].id %>"><%= posts[i].title %></a>
+            </li>
+            <% } %> <% } %>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <%- include("partials/footer.ejs") %>
