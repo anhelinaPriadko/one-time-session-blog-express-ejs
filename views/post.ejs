@@ -1,9 +1,13 @@
 <%- include("partials/header.ejs") %>
 
+<div>
 <% if(locals.post) { %>
 
-    <h1><%= post.title %></h1>
-    <p><%= post.content %></p>
+    <h1 class="margin-title gothic-text"><%= post.title %></h1>
+    <p class="margin-text quicksand-text"><%= post.content %></p>
 
 <% } %>
+</div>
+
+
 <%- include("partials/footer.ejs") %>
