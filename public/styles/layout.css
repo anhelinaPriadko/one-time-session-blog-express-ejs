@@ -18,7 +18,7 @@ html {
 .header-links-list {
   display: flex;
   gap: 3rem;
-  
+  list-style: none;
   padding: 0;
 }
 
