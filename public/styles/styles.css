@@ -22,7 +22,7 @@ ul {
 .list-post-cell {
   padding: 10px;
   color: #f3f3e0;
-  background-color: #133E87;
+  background-color: #133e87;
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -34,43 +34,104 @@ ul {
   color: #f3f3e0;
 }
 
-footer > p{
-    color: #f3f3e0;
-    font-size: 1rem;
+footer > p {
+  color: #f3f3e0;
+  font-size: 1rem;
 }
 
-footer{
-    margin-top: 0px;
+footer {
+  margin-top: 0px;
 }
 
-.flex-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8%;
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8%;
 }
 
-.flex-container > div{
-    padding: 0px 0px;
-    width: 65%;
+.flex-container > div {
+  padding: 0px 0px;
+  width: 65%;
 }
 
-.logo-img{
-    width: 25%;
+.logo-img {
+  width: 25%;
 }
 
-.margin-title{
-    margin: 32px 0px;
+.margin-title {
+  margin: 32px 0px;
 }
 
-.margin-small-title{
-    margin: 24px 0px;
+.margin-small-title {
+  margin: 24px 0px;
 }
 
-.margin-tiny-title{
-    margin: 16px 0px;
+.margin-tiny-title {
+  margin: 16px 0px;
 }
 
-.margin-text{
-    margin: 8px 0px;
+.margin-text {
+  margin: 8px 0px;
 }
+
+.form-div {
+  width: 40% !important;
+}
+
+.form-div form {
+  width: 100%; /* форма займає всю ширину div */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input[type="text"] {
+  background-color: #f3f3e0;
+  padding: 10px;
+  border: 1px solid #608bc1;
+  border-radius: 8px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  font-style: normal;
+}
+
+input::placeholder {
+  color: #608bc1;
+}
+
+input[type="submit"] {
+  padding: 10px;
+  background: #608bc1;
+  color: #f3f3e0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  font-style: normal;
+}
+
+input[type="submit"]:hover {
+  background: #133e87;
+}
+
+input[type="text"]:focus {
+  border-color: #133e87;
+  box-shadow: 0 0 2px rgba(96, 139, 193, 0.5);
+  outline: none;
+}
+
+input[type="text"]:valid {
+  border-color: #133e87;
+}
+
+input[type="text"], textarea {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.3rem;
+  color: #133e87;
+  font-weight: 500;
+}
+

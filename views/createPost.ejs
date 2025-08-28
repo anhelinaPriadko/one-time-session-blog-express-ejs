@@ -1,25 +1,34 @@
 <%- include("partials/header.ejs") %>
-
-<form action="/createPost" method="POST">
-
+<div class="form-div">
+  <form action="/createPost" method="POST">
     <% if (locals.errors && locals.errors.length > 0) { %>
-        <ul class="error">
-        <% errors.forEach(error => { %>
-            <li><%= error.msg %></li>
-        <% }) %>
-        </ul>
+    <ul class="error">
+      <% errors.forEach(error => { %>
+      <li><%= error.msg %></li>
+      <% }) %>
+    </ul>
     <% } %>
 
-    <input 
-        type="text" required maxlength="100" 
-        minlength="5" name="title" placeholder="Title" 
-        value="<%= typeof oldInput !== 'undefined' ? oldInput.title : '' %>"
+    <input
+      type="text"
+      required
+      maxlength="100"
+      minlength="5"
+      name="title"
+      placeholder="Title"
+      value="<%= typeof oldInput !== 'undefined' ? oldInput.title : '' %>"
     />
-    <input type="text" required maxlength="5000" 
-        minlength="20" name="content" placeholder="Content" 
-        value="<%= typeof oldInput !== 'undefined' ? oldInput.content : '' %>"
+    <input
+      type="text"
+      required
+      maxlength="5000"
+      minlength="20"
+      name="content"
+      placeholder="Content"
+      value="<%= typeof oldInput !== 'undefined' ? oldInput.content : '' %>"
     />
     <input type="submit" value="Create new post" />
-</form>
+  </form>
+</div>
 
 <%- include("partials/footer.ejs") %>
