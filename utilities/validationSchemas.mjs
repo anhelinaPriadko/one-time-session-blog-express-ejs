@@ -1,6 +1,10 @@
 export const postValidationSchema = {
 title: {
+    in: ["body"],
     trim: true,
+    notEmpty:{
+        errorMessage: "Post title can`t be empty"
+    },
     isLength:{
         min: 5, 
         max: 100,
@@ -9,7 +13,11 @@ title: {
 },
 
 content: {
+    in: ["body"],
     trim: true,
+    notEmpty:{
+        errorMessage: "Post content can`t be empty"
+    },
     isLength:{
         min: 20, 
         max: 5000,
