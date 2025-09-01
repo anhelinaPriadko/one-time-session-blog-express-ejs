@@ -11,7 +11,7 @@ html {
 
   background-color: #133e87;
   color: #f3f3e0;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 .header-links-list {
@@ -23,6 +23,13 @@ html {
 
 .header-links {
   color: #f3f3e0;
+}
+
+.header-links:hover, 
+.header-links:active, 
+.list-post-cell > a:hover,
+.list-post-cell > a:active {
+  color: #608bc1;
 }
 
 .quicksand-text {
@@ -61,3 +68,4 @@ main {
   list-style-type: none;
   padding-inline-start: 0;
 }
+
